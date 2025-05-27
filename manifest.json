@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "WhatsApp CSV Sender (One Tab, Background)",
+  "version": "1.2",
+  "description": "Send WhatsApp messages from CSV using one tab via background script",
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icon.png"
+    }
+  },
+  "permissions": ["tabs", "scripting"],
+  "host_permissions": ["https://wa.me/*"],
+  "background": {
+    "service_worker": "background.js"
+  }
+}
